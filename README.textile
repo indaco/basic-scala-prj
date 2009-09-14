@@ -4,8 +4,8 @@ scala-prj-basic is a "Maven Archetype":http://maven.apache.org/plugins/maven-arc
 
 h3. Install
 <pre>
-git clone git://github.com/indaco/scala-prj-basic.git
-cd scala-prj-basic
+git clone git://github.com/indaco/basic-scala-prj.git
+cd basic-scala-prj
 mvn clean install
 </pre>
 
