@@ -1,0 +1,28 @@
+scala-prj-basic is a "Maven Archetype":http://maven.apache.org/plugins/maven-archetype-plugin/index.html for "Scala":http://scala-lang.org/. It use "Scala":http://scala-lang.org version 2.7.6 and "ScalaTest":http://www.artima.com/scalatest version 1.0-SNAPSHOT
+
+h3.Install
+<pre>
+git clone git://github.com/indaco/scala-prj-basic.git
+cd scala-prj-basic
+mvn clean install
+</pre>
+
+h3. Use
+<pre>
+mvn archetype:create -DarchetypeGroupId=org.creativeprogramming -DarchetypeArtifactId=basic-scala-prj -DarchetypeVersion=0.9 -DartifactId=basic-test -DgroupId=org.example
+
+cd scala-basic
+
+mvn scala:compile
+mvn scala:testCompile
+mvn test
+
+</pre>
+
+h3.Dependency
+<pre>
+dependency:tree
+	+- org.scala-lang:scala-library:jar:2.7.6:compile
+	+- org.scalatest:scalatest:jar:1.0-SNAPSHOT:test
+	\- junit:junit:jar:4.7:test
+</pre>
