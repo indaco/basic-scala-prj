@@ -1,25 +1,8 @@
-h2. Basic Scala Prj
+h2. Basic Scala Project
 
-scala-prj-basic is a "Maven Archetype":http://maven.apache.org/plugins/maven-archetype-plugin/index.html for "Scala":http://scala-lang.org/. It use Scala version 2.7.6 and "ScalaTest":http://www.artima.com/scalatest version 1.0-SNAPSHOT
+scala-prj-basic is a "Maven Archetype":http://maven.apache.org/plugins/maven-archetype-plugin/index.html for "Scala":http://scala-lang.org/. It use Scala 2.7.7 and "ScalaTest 1.0":http://www.artima.com/scalatest
 
-h3. 1. Installing into local repository
-<pre>
-git clone git://github.com/indaco/basic-scala-prj.git
-cd basic-scala-prj
-mvn clean install
-</pre>
-
-h3. 2. Create a fresh project based on the installed archetype
-See "1. Installing into local repository"
-<pre>
-mvn archetype:create -DarchetypeGroupId=org.creativeprogramming -DarchetypeArtifactId=basic-scala-prj -DarchetypeVersion=0.9 -DartifactId=basic-test -DgroupId=org.example
-cd scala-basic
-mvn scala:compile
-mvn scala:testCompile
-mvn test
-</pre>
-
-h3. 3. Simple Use it
+h3. Use it
 <pre>
 git clone git://github.com/indaco/basic-scala-prj.git
 cd basic-scala-prj
@@ -28,10 +11,10 @@ mvn scala:testCompile
 mvn test
 </pre>
 
-h3. Dependency
+h3. Dependencies
 <pre>
 dependency:tree
-	+- org.scala-lang:scala-library:jar:2.7.6:compile
-	+- org.scalatest:scalatest:jar:1.0-SNAPSHOT:test
+	+- org.scala-lang:scala-library:jar:2.7.7:compile
+	+- org.scalatest:scalatest:jar:1.0:test
 	\- junit:junit:jar:4.7:test
 </pre>
